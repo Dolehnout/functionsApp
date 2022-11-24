@@ -21,19 +21,24 @@ namespace functionsApp
         {
             this.Close();
         }
-
+        int attemps = 5;
         private void btnJoin_Click(object sender, EventArgs e)
         {
             string usuario = txtUser.Text;
             string contraseña = txtPassword.Text;
 
-            if (functionsApp.functions.miscellaneous.validaUsuario(usuario, contraseña))
+            if (attemps <= 0) this.Close();
+            if (!(functionsApp.functions.miscellaneous.validaUsuario(usuario, contraseña)))
             {
                 MessageBox.Show("Usuario y contraseña correcta");
+                lblAttemps.Text = $"Te quedan {attemps} intentos para ingresar";
+                attemps--;
             }
             else
             {
-                MessageBox.Show("Debes ingresar el usuairo correcto");
+                MessageBox.Show("Ingreso exitoso");
+                principalMenu openMenu = new principalMenu();
+                openMenu.Show();
             }
         }
     }

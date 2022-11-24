@@ -65,6 +65,12 @@
       <DependentUpon>frmTablaMultiplicar.cs</DependentUpon>
     </Compile>
     <Compile Include="functions\miscellaneous.cs" />
+    <Compile Include="principalMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="principalMenu.Designer.cs">
+      <DependentUpon>principalMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmUser.cs">
@@ -84,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUser.resx">
       <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="principalMenu.resx">
+      <DependentUpon>principalMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

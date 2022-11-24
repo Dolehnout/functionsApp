@@ -34,6 +34,7 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnJoin = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.lblAttemps = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -93,11 +94,20 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // lblAttemps
+            // 
+            this.lblAttemps.AutoSize = true;
+            this.lblAttemps.Location = new System.Drawing.Point(310, 238);
+            this.lblAttemps.Name = "lblAttemps";
+            this.lblAttemps.Size = new System.Drawing.Size(0, 13);
+            this.lblAttemps.TabIndex = 6;
+            // 
             // frmUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblAttemps);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnJoin);
             this.Controls.Add(this.txtPassword);
@@ -119,5 +129,6 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnJoin;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label lblAttemps;
     }
 }

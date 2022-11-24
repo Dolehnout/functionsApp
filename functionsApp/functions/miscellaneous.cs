@@ -25,9 +25,16 @@ namespace functionsApp.functions
             }
             return aux;
         }
+
+        /// <summary>
+        /// Función que valida usuario y contraseña
+        /// </summary>
+        /// <param name="usuario"></param>
+        /// <param name="contraseña"></param>
+        /// <returns></returns>
         public static bool validaUsuario(string usuario, string contraseña)
         {
-            return ((usuario == "admin" && contraseña == "pucese") ? true : false);
+            return ((usuario == "pallas" && contraseña == "cat") ? true : false);
         }
     }
 }
